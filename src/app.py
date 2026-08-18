@@ -95,7 +95,7 @@ def process_video(uploaded_file):
             
             annotated = results[0].plot()
             annotated_rgb = cv2.cvtColor(annotated, cv2.COLOR_BGR2RGB)
-            stframe.image(annotated_rgb, channels="RGB", use_column_width=True)
+            stframe.image(annotated_rgb, channels="RGB", use_container_width=True)
         
         progress.progress(min(frame_count / total_frames, 1.0))
     
@@ -114,7 +114,7 @@ if uploaded is not None:
         
         with col2:
             st.subheader("🔍 Detection Result")
-            st.image(annotated_img, use_column_width=True)
+            st.image(annotated_img, use_container_width=True)
     
     else:
         st.subheader("🎬 Video Analysis")
