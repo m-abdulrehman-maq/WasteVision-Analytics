@@ -38,3 +38,10 @@ model = YOLO('best.pt')
 results = model.predict(source='path_to_your_image.jpg', save=True, conf=0.25)
 
 print("Detection complete! Check the 'runs/detect/predict' folder for output results.")
+```
+## Feedback and Contributions
+We welcome your feedback and contributions to improve the Garbage Classification System. If you encounter any issues, have suggestions for new features, or want to contribute to the project, please don't hesitate to open an issue or submit a pull request on this GitHub repository.
+## License
+This project is licensed under the MIT License. Feel free to modify and distribute it in accordance with the license terms.
+
+
